@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Firmas para que se juegue otra vez la final</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firmas para que se juegue otra vez la final</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body style="font-family:Arial;background:#f4f4f4;text-align:center;padding:30px;">
+<div class="hero">
 
-<h1>Firmas para que se juegue otra vez la final</h1>
+    <h1>Firmas para que se juegue otra vez la final</h1>
 
-<img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=1000"
-width="700">
+    <p class="subtitulo">
+        Firma esta petición y ayuda a alcanzar las <b>500.000 firmas</b>.
+    </p>
 
-<h2>Meta</h2>
+    <img
+        class="banner"
+        src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?w=1200"
+        alt="Argentina vs España">
 
-<h3>0 / 500.000 firmas</h3>
+    <h2 id="contador">0 / 500.000 firmas</h2>
 
-<progress value="0" max="500000" style="width:400px;height:25px;"></progress>
+    <div class="barra">
+        <div class="progreso" id="progreso"></div>
+    </div>
 
-<br><br>
+    <button onclick="firmar()">
+        ✍️ Firmar ahora
+    </button>
 
-<button style="padding:15px 40px;font-size:22px;">
-✍️ Firmar
-</button>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
